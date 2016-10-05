@@ -1,0 +1,72 @@
+<!doctype html>
+<!--
+    Created by Keon Hee Park 
+    Assignment 4: Part 1
+    assignment4.html
+	Course: CSC 4370 - Web Programming
+	Instructor: Louis Henry
+	Date: October 8, 2016
+-->
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.php">
+    <title>Assignment 4</title>
+</head>
+
+<body>
+    <form action="assignment4.php" method="post">
+    <!--<form action="css/main.php" method="post">-->
+        <fieldset>
+            <legend><b><i>Enter Information</i></b></legend>
+            <div>
+                <h2>Font-Family Options:</h2>
+            <p>
+                <input name="radioFontFamily" type="radio" value="Impact"/>Impact
+            </p>
+            <p>
+                <input name="radioFontFamily" type="radio" value="Fantasy"/>Fantasy
+            </p>
+            <p>
+                <input name="radioFontFamily" type="radio" value="Cursive"/>Cursive
+            </p>
+            </div>
+            <div style="background-color: lightblue;">
+                <h2>Text Color Options:</h2>
+            <p>
+                <input name="radioColor" type="radio" value="red" />Red
+            </p>
+            <p>
+                <input name="radioColor" type="radio" value="blue"/>Blue
+            </p>
+            <p>
+                <input name="radioColor" type="radio" value="green"/>Green
+            </p>
+            </div>
+            <div>
+                <h2>Font Weight Options:</h2>
+                <select name="optionFontWeight">
+                    <option value="lighter">Lighter</option>
+                    <option value="bold">Bold</option>
+                    <option value="bolder">Bolder</option>
+                </select>
+            </div>
+            <div>
+                <h2>Font Size Options:</h2>
+                <p>
+                    <input type="text" name="optionFontSize"> px
+                </p>
+            </div>
+            <p>
+                Please write your comments here.
+                <br/>
+                <textarea id="theText" name="remarks" rows="10" cols="25">I'm very pleased with your service!!!</textarea>
+            </p>
+            <p>
+                <input name="submitButton" type="submit" value="Submit" />
+            </p>
+    </form>
+</body>
+
+</html>
