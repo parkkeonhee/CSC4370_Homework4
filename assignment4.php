@@ -32,7 +32,7 @@
         $_SESSION['fontWeightVariable'] = $fontWeight;
         $_SESSION['fontSizeVariable'] = $fontSize;
         
-        print "<p>" . $text . "</p>";
+        print "<p class ='modifiable'>" . $text . "</p>";
     }else // ! $_POST
     {
         print "POST does not exist. It is set to false.";

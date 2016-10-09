@@ -27,10 +27,10 @@
         $fontFamily = $_SESSION['fontFamilyVariable'];
         $fontWeight = $_SESSION['fontWeightVariable'];
         $fontSize = $_SESSION['fontSizeVariable'];
-        
+        print ".modifiable {";
         print "color: " . $color . ";";
         print "font-family: " . $fontFamily . ";";
         print "font-weight: " . $fontWeight . ";";
         print "font-size: " . $fontSize . "px;";
+    print "}";
     ?>
-}
