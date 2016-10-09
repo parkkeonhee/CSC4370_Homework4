@@ -8,9 +8,19 @@
 	Date: October 8, 2016
 */
     header("Content-type: text/css; charset:UTF-8");
+    print "header{";
+    print "text-align: center;";
+    print "}";
+    
+    print "h1,h3{";
+    print "font-weight: normal;";
+    print "}";
+    
+    print ".centering{";
+    print "text-align: center;";
+    print "}";
 ?>
 
-.modifiable{
     <?php
         session_start();
         $color = $_SESSION['colorVariable'];

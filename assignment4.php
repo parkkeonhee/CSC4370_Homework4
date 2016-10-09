@@ -8,6 +8,7 @@
 	Date: October 8, 2016
 -->
 <html lang="en-US">
+
 <head>
     <meta charset="utf-8">
     <title>Assignment 4</title>
@@ -15,6 +16,7 @@
         print '<link rel="stylesheet" type="text/css" href="css/style.php">';
     ?>
 </head>
+
 <body>
     <?php
     if($_POST){
@@ -30,11 +32,12 @@
         $_SESSION['fontWeightVariable'] = $fontWeight;
         $_SESSION['fontSizeVariable'] = $fontSize;
         
-        print "<p class=modifiable>" . $text . "</p>";
+        print "<p>" . $text . "</p>";
     }else // ! $_POST
     {
         print "POST does not exist. It is set to false.";
     }
     ?>
 </body>
+
 </html>
